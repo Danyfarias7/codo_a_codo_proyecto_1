@@ -96,7 +96,7 @@ height: 100%;
 width: 100%;
 border: 2px solid #353a40;;
 /* padding: 10px; */
-background-color:#0f7b2e9c;
+background: linear-gradient(180deg,#02C5F5, #22d336);
 text-align: center;
 
 }
@@ -104,13 +104,16 @@ text-align: center;
 .nav_responsive a{
 border: 1px solid white;
 border-radius: 5px;
-
+padding: 10px 0;
 }
 
-.nav_link-a:link{
-color: white;
-font-size: 20px;
+
+
+
+.nav_link-a:visited {
+	color: #eeecef;
 }
+
 
 .nav_link-a:active{
 color: #0f7b2e;
