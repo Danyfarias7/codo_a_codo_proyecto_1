@@ -2,14 +2,16 @@
 
 
 const  menuHamburguesa = document.querySelector('.nav_hamburguesa');
-const navResponsive = document.querySelector('.nav-responsive');
+const navResponsive = document.querySelector('.nav_responsive div');
 const nav_link = document.querySelector('.nav_link');
+const nav = document.querySelector('.nav');
 console.log(menuHamburguesa);
 
 
 menuHamburguesa.addEventListener('click', function(){
 
-navResponsive.appendChild(nav_link );
-nav_link.classList.toggle("nav_link-active");
+
+     navResponsive.classList.toggle("nav_responsive-active");
+
 
 })

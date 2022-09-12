@@ -63,6 +63,9 @@ display: none;
 width: 50px;
 }
 
+.nav_responsive-hide{
+	display: none;
+	}
 
 
 /* ================================MEDIA QUERIES  */
@@ -82,14 +85,13 @@ margin-right: 0;
      }
      
 
-.nav_link-active{
+.nav_responsive-active{
      display: flex;
      flex-direction: column;
-   
 }
      
      
-.nav-responsive{
+.nav_responsive{
 height: 100%;
 width: 100%;
 border: 2px solid #353a40;;
@@ -99,11 +101,9 @@ text-align: center;
 
 }
 
-.nav-responsive a{
+.nav_responsive a{
 border: 1px solid white;
 border-radius: 5px;
-
-
 
 }
 
@@ -121,10 +121,21 @@ color: #0f7b2e;
      }
 
 
-
+.nav_link_hide{
+		display: none;
+		}
 
 
 
 
 }
 
+@media screen and  (min-width: 900px) { 
+	
+
+	
+	.nav_responsive{
+	display: none;
+	}
+	
+}
