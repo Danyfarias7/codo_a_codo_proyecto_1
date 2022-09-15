@@ -2,11 +2,15 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,300;0,600;0,900;1,100;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Quintessential&display=swap');
 /* =============================================NAV  */
 
-
+.main{
+	height: 100%;
+	}
 .nav {
      width: 100%;
 	background-color: #323437;
@@ -76,11 +80,10 @@ display: none;
 
 /*=================== Section Building  */
 
-.main{
-height: 100%;
-}
+
 
 	.section_building{
+		margin-bottom: 20px;
 	height:  100vh;
 	background:linear-gradient(rgba(25, 24, 24, 0.697), rgba(21, 19, 19, 0.5)), url(img/ba1.jpg);
 
@@ -102,6 +105,7 @@ height: 100%;
 	flex-direction: column;
 	justify-content: space-around;
 	width: 50%;
+	
 	height: 30%;
 	/* background-color: red; */
 	position: absolute;
@@ -155,13 +159,146 @@ height: 100%;
 	
 	/* Section Building  */
 	
+
 	
-	.section_oradores{
-		height:  100vh;
-	width: 100%;
-	border: 5px solid black;
+	
+	
+	/* SECTIO ORADORES ======= */
+	
+
+
+.section_oradores{
+margin-bottom: 40px;
+height:  100vh;
+width: 100%;
+		/* border: 5px solid black; */
+font-size: 13px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 20px;
+
+}
+
+.section_oradores-heading{
+margin-top: 10px;
+position: relative;
+}
+
+.section_oradores-heading p{
+	
+	font-size: 13px;
+	color: grey;
+	margin-bottom: 10px;
 	}
 	
+	.section_oradores-heading h2{
+		font-size: 25px;
+		color: black;
+		letter-spacing: 2px;
+		position: absolute;
+		right: -50%;
+		top: 50%;
+		}
+
+
+.section_oradores-cards{
+width: 100%;
+height: 100%;
+display: flex;
+flex-wrap: wrap;
+/* border: red solid 1px; */
+justify-content: center;
+align-items: center;
+gap: 25px;
+flex-wrap: wrap;
+}
+
+.section_oradores-cards-style{
+border:  solid rgba(0, 0, 0, 0.127) 1px;
+width: 25%;
+/* height: fit-content; */
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+position: relative;
+}
+
+.section_oradores-cards-style:hover{
+cursor: pointer;
+background-color: rgba(172, 162, 162, 0.085);
+
+}
+
+
+.section_oradores-cards-style:hover::after{
+content: "Click para Leer";
+position: absolute;
+top: 15%;
+right: 0;
+color:white;
+background-color: #0f7b2ea6;
+padding: 5% 10%;
+border-radius: 7%;
+}
+
+
+.section_oradores-cards-style img{
+width: 100%;
+height: 60%;
+margin-bottom: 5px;
+
+
+}
+
+.section_oradores-marks{
+display: flex;
+gap: 10px;
+margin-left: 5px;
+margin-bottom: 3px;
+
+}
+
+
+
+.section_oradores-marks .p1, .p2, .p3,.p4{
+
+	border-radius: 5px;
+	padding: 3px 5px;
+	background-color: #EFC033;
+	color: black;
+	font-weight: bold;
+	}
+	
+	.section_oradores-marks .p2{
+		background-color: #3F9DAF;
+		color: white;
+		}
+	
+		.section_oradores-marks .p3{
+			background-color: #36393979;
+			color: white;
+			}
+			
+			.section_oradores-marks .p4{
+				background-color: rgba(255, 0, 0, 0.662);
+				color: white;
+				}
+			
+		
+	
+.section_oradores-cards-style h3{
+margin-bottom: 5px;
+margin-left: 5px;
+}
+
+.section_oradores-cards-style p{
+	padding: 5px;
+	height: fit-content;
+	
+	}
+
+
+
 	.section_playa{
 		height:  100vh;
 		width: 100%;
@@ -176,18 +313,23 @@ height: 100%;
 			border: 5px solid black;
 			}
 			
-	
 
 
+/* ================================MEDIA QUERIES  */
 
+/* ================================MEDIA QUERIES  */
 
+/* ================================MEDIA QUERIES  */
 
+/* ================================MEDIA QUERIES  */
 
+/* ================================MEDIA QUERIES  */
 
+/* ================================MEDIA QUERIES  */
 
+/* ================================MEDIA QUERIES  */
 
-
-
+/* ================================MEDIA QUERIES  */
 
 /* ================================MEDIA QUERIES  */
 
@@ -259,6 +401,28 @@ color: #0f7b2e;
 
 }
 
+/* cards */
+
+@media screen and  (max-width: 700px){
+
+.section_oradores{
+	height: 100%;
+}
+	.section_oradores-cards{
+		flex-direction: column;
+		margin-bottom: 20px;
+		gap: 50px;
+		
+
+}
+
+	.section_oradores-cards-style{
+	width: 55%;
+	height: 60%;
+
+	
+}
+
 
 
 
@@ -276,7 +440,7 @@ color: #0f7b2e;
 /* =============================================NAV   FINAL*/
 
 /* =============================================SECTION  BUILDING RESPONSIVE PHONE*/
-@media screen and  (max-width: 500px){
+@media screen and  (max-width: 600px){
 
 
 	.section_building-box{
