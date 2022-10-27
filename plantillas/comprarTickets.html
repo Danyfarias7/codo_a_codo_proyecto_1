@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8" />
+     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <title>Comprar Tickets</title>
+     <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+
+
+
+
+     <div class="container_">
+          <div class="comprar_tickets_nav">
+               <div class="comprar_tickets">
+                    <div class="cards_uno cards ">
+                         <h3>Estudiante</h3>
+                         <p>Tiene un descuento</p>
+                         <p class="cards_p">80%</p>
+                         <p>* presentar documentación</p>
+                    </div>
+                    <div class="cards_dos cards ">
+                         <h3>Trainee</h3>
+                         <p>Tiene un descuento</p>
+                         <p class="cards_p">50%</p>
+                         <p>* presentar documentación</p>
+                    </div>
+                    <div class="cards_tres cards ">
+                         <h3>Junior</h3>
+                         <p>Tiene un descuento</p>
+                         <p class="cards_p">15%</p>
+                         <p>* presentar documentación</p>
+                    </div>
+               </div>
+          </div>
+
+          <div class="form_">
+               <form class="section_formulario_">
+                    <div class="section_formulario-box_">
+                         <div class="section_formulario-header_">
+                              <p>Venta</p>
+                              <h5>VALOR DEL TICKET $200</h5>
+                         </div>
+
+                         <div class="section_formulario-nom-ape_">
+                              <div class="section_formulario-name_">
+                                   <label for="name"></label>
+                                   <input type="text" id="name" placeholder=" Nombre" />
+                              </div>
+
+                              <div class="section_formulario-ape_">
+                                   <label for="apellido"></label>
+                                   <input type="text" id="appelido" placeholder=" Apellido" />
+                              </div>
+                         </div>
+                         
+                         <div class="section_formulario-correo_">
+                              <label for="email"></label>
+                              <input type="email" id="email" placeholder="Correo" />
+                         </div>
+                         
+                     <div class="section_formulario-cantidad_">
+                    
+                         <div class="section_formulario-cant_">
+                              <label for="cant">Cantidad</label>
+                              <input type="text" id="cant" placeholder=" Cantidad" />
+                         </div>
+
+                              
+                              
+                              
+                         <form class="section_formulario-select_" name="formid">
+                                   <label for="list">Categoria</label>
+                                        
+                    
+                                   <select name="selected" id="list"  onchange="getSelectValue()">
+                                     <option value="Estudiante">Estudiante</option>
+                                     <option value="Trainee">Trainee</option>
+                                     <option value="Junior">Junior</option>
+                                   </select>
+                         </form>
+                     </div>
+                         
+                    <!-- total a pagar -->
+           
+                    <div class="section_formulario_total-a-pagar_">
+                              <div ></div>
+                 
+                         
+                    </div>
+               
+                   <div class="section_formulario_submit_">
+                         <input type="reset" value="Borrar" class="btn-borrar"  />
+                         <input type="submit"  class="btn-resumen" value="Resumen" />
+                   </div>
+                    
+               
+               
+               </form>
+          </div>
+     </div>
+
+<script src="js/comprarTickets.js"></script>
+</body>
+
+</html>
